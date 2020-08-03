@@ -10,7 +10,7 @@ class Enigma:
         for i in range(len(order)):
             self.order[i] -= 1
         self.rotor = rotor
-        if not isinstance(self.rotor, list) or len(rotor) != n_rotors:
+        if not isinstance(self.rotor, list):
             raise AssertionError
         self.next = dict()
         self.build_next(pairs)
