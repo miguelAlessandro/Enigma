@@ -1,3 +1,4 @@
+python-qt5
 attrs==19.3.0
 backports-abc==0.5
 backports.shutil-get-terminal-size==1.0.0
@@ -42,6 +43,7 @@ PyOpenGL==3.1.5
 pyparsing==2.4.7
 pyrsistent==0.16.0
 python-dateutil==2.8.1
+pyuic5-tool==0.0.1
 pywin32==227
 pywinpty==0.5.7
 pyzmq==19.0.1

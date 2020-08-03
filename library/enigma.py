@@ -45,10 +45,10 @@ class Enigma:
 
     @staticmethod
     def reflect(key):
-        key = ord(key) - ord('A')
-        key = (key + 1) % 26
-        key = key + ord('A')
-        return chr(key)
+        if ord(key) % 2 == 1:
+            return chr(ord(key) + 1)
+        else:
+            return chr(ord(key) - 1)
 
     def rotate_all(self):
         pot = [1]

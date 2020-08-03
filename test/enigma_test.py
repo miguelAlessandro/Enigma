@@ -1,20 +1,19 @@
 import unittest
 from library.enigma import Enigma
 
+
 class MyTestCase(unittest.TestCase):
     def test_enigma_1(self):
         machine = Enigma(3, [1, 2, 3],
                          ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"],
                          ['AB'], ['A', 'B', 'C'])
-        self.assertEqual(machine.press('A'), 'C')
-        self.assertEqual(machine.press('A'), 'C')
-        self.assertEqual(machine.press('A'), 'C')
+        self.assertEqual(machine.press('A'), 'B')
 
     def test_enigma_2(self):
         machine = Enigma(3, [1, 2, 3],
                          ["CBADEFGHIJKLMNOPQRSTUVWXYZ", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"],
                          ['AB'], ['A', 'B', 'C'])
-        self.assertEqual(machine.press('A'), 'C')
+        self.assertEqual(machine.press('A'), 'B')
         self.assertEqual(machine.press('A'), 'C')
         self.assertNotEqual(machine.press('A'), 'C')
 
