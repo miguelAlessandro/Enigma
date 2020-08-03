@@ -27,7 +27,14 @@ class Enigma:
                 self.rotate(self.order[idx])
 
     def build_next(self, pairs):
+        used = set()
         for e in pairs:
+            if e[0] == e[1]:
+                raise AssertionError
+            if e[0] in used or e[1] in used:
+                raise AssertionError
+            used.add(e[0])
+            used.add(e[1])
             self.next[e[0]] = e[1]
             self.next[e[1]] = e[0]
 

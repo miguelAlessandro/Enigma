@@ -1,6 +1,5 @@
 import unittest
-from enigma import Enigma
-
+from library.enigma import Enigma
 
 class MyTestCase(unittest.TestCase):
     def test_enigma_1(self):

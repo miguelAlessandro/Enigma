@@ -1,5 +1,5 @@
 from settings import *
-from enigma import Enigma
+from library.enigma import Enigma
 
 
 def press_button(machine, key):
