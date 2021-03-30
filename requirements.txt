@@ -38,7 +38,7 @@ prometheus-client==0.7.1
 prompt-toolkit==1.0.18
 pygame==1.9.6
 pyglet==1.5.5
-Pygments==2.5.2
+Pygments==2.7.4
 PyOpenGL==3.1.5
 pyparsing==2.4.7
 pyrsistent==0.16.0
